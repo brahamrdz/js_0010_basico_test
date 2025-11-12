@@ -1,0 +1,111 @@
+bun test v1.3.2 (b131639c)
+
+app.test.js:
+(pass) mayor de 3 numeros [0.16ms]
+(pass) cero is null [0.05ms]
+(pass) cero is null, valor distinto de nulo [0.02ms]
+(pass) contar pares desde un numero a otro [0.07ms]
+(pass) contar pares desde un numero a otro [0.03ms]
+66 |     const cadena = 'hola';
+67 |     const n = 4;
+68 |     // act
+69 |     const result = ifCadenaMasLargaDeN(cadena, n);
+70 |     // assert
+71 |     expect(result).toBe(false);
+                        ^
+error: expect(received).toBe(expected)
+
+Expected: false
+Received: undefined
+
+      at <anonymous> (/home/anarquimia/gitLearning/firstTry/js_0010_basico_test/app.test.js:71:20)
+(fail) cadena de longitu mayor o igual a  n [0.19ms]
+76 |     const cadena = 'hola';
+77 |     const n = 3;
+78 |     // act
+79 |     const result = ifCadenaMasLargaDeN(cadena, n);
+80 |     // assert
+81 |     expect(result).toBe(true);
+                        ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: undefined
+
+      at <anonymous> (/home/anarquimia/gitLearning/firstTry/js_0010_basico_test/app.test.js:81:20)
+(fail) cadena de longitu mayor o igual a  n [0.09ms]
+85 |     const cadena = '';
+86 |     const n = 1;
+87 |     // act
+88 |     const result = ifCadenaMasLargaDeN(cadena, n);
+89 |     // assert
+90 |     expect(result).toBe(false);
+                        ^
+error: expect(received).toBe(expected)
+
+Expected: false
+Received: undefined
+
+      at <anonymous> (/home/anarquimia/gitLearning/firstTry/js_0010_basico_test/app.test.js:90:20)
+(fail) cadena vacia de longitud  mayor o igual a  n [0.08ms]
+ 97 |     const c = 3;
+ 98 |     const n = 6;
+ 99 |     // act
+100 |     const result = trueIfSumaDeTresNumerosIgualN(a,b,c,n);
+101 |     // assert
+102 |     expect(result).toBe(true);
+                         ^
+error: expect(received).toBe(expected)
+
+Expected: true
+Received: undefined
+
+      at <anonymous> (/home/anarquimia/gitLearning/firstTry/js_0010_basico_test/app.test.js:102:20)
+(fail) suma de tres numeros igual a n [0.09ms]
+109 |     const c = 3;
+110 |     const n = 7;
+111 |     // act
+112 |     const result = trueIfSumaDeTresNumerosIgualN(a,b,c,n);
+113 |     // assert
+114 |     expect(result).toBe(false);
+                         ^
+error: expect(received).toBe(expected)
+
+Expected: false
+Received: undefined
+
+      at <anonymous> (/home/anarquimia/gitLearning/firstTry/js_0010_basico_test/app.test.js:114:20)
+(fail) suma de tres numeros igual a n [0.06ms]
+119 |     const cantidad = 15.56;
+120 |     const precio = 1.45;
+121 |     // act
+122 |     const result = importe(cantidad , precio);
+123 |     // assert
+124 |     expect(result).toBe(2256);
+                         ^
+error: expect(received).toBe(expected)
+
+Expected: 2256
+Received: undefined
+
+      at <anonymous> (/home/anarquimia/gitLearning/firstTry/js_0010_basico_test/app.test.js:124:20)
+(fail) centimos   [0.09ms]
+129 |     const cantidad = 5;
+130 |     const precio = 5;
+131 |     // act
+132 |     const result = importe(cantidad , precio);
+133 |     // assert
+134 |     expect(result).toBe(2500);
+                         ^
+error: expect(received).toBe(expected)
+
+Expected: 2500
+Received: undefined
+
+      at <anonymous> (/home/anarquimia/gitLearning/firstTry/js_0010_basico_test/app.test.js:134:20)
+(fail) centimos   [0.11ms]
+
+ 5 pass
+ 7 fail
+ 12 expect() calls
+Ran 12 tests across 1 file. [15.00ms]
