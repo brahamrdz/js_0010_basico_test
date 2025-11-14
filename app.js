@@ -16,15 +16,21 @@ export function numerosParesCount(desde, hasta) {
 }
 
 export function ifCadenaMasLargaDeN(cadena, n) {
- 
+	const length = cadena.length;
+    
+    if (length > n) {
+        return true;
+    } else {
+        return false;
+    } 
 
 }
 export function trueIfSumaDeTresNumerosIgualN(a, b, c, n) {
- 
+	return (a + b + c) === n; 
 
 }
 // que devuelva en centimos redondeado
 // el producto de cantidad por precio
 export function importe(cantidad, precio) {
-  
+	return Math.round(cantidad * precio * 100);  
 }
